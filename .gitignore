@@ -4,3 +4,5 @@
 *.swp
 tags
 immigration_360/docs/current
+.vscode/settings.json
+.gitignore
