@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2021-05-02 01:07:21.534515",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "informations_de_base_section",
+  "client",
+  "dob"
+ ],
+ "fields": [
+  {
+   "fieldname": "informations_de_base_section",
+   "fieldtype": "Section Break",
+   "label": "Informations de base"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "Date de Naissance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-05-02 01:07:21.534515",
+ "modified_by": "Administrator",
+ "module": "Immigration 360",
+ "name": "Dossier Immigration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
