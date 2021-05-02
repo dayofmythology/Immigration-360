@@ -1,13 +1,23 @@
 {
  "actions": [],
+ "autoname": "DI-{YYMM}-{####}",
  "creation": "2021-05-02 01:07:21.534515",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "data_6",
+  "consultant",
+  "date_de_creation",
+  "etat",
   "informations_de_base_section",
   "client",
-  "dob"
+  "dob",
+  "data_8",
+  "data_9",
+  "pays_de_residence",
+  "pays_de_destination",
+  "data_12"
  ],
  "fields": [
   {
@@ -18,21 +28,76 @@
   {
    "fieldname": "client",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Client",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "dob",
    "fieldtype": "Date",
-   "label": "Date de Naissance"
+   "in_list_view": 1,
+   "label": "Date de Naissance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Link",
+   "label": "Consultant Assign\u00e9",
+   "options": "Employee"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "data_6",
+   "fieldtype": "Section Break",
+   "label": "Informations sur le dossier"
+  },
+  {
+   "fieldname": "date_de_creation",
+   "fieldtype": "Data",
+   "label": "Date de Creation"
+  },
+  {
+   "fieldname": "etat",
+   "fieldtype": "Data",
+   "label": "Etat"
+  },
+  {
+   "fieldname": "data_8",
+   "fieldtype": "Section Break",
+   "label": "Informations d'Immigration"
+  },
+  {
+   "fieldname": "data_9",
+   "fieldtype": "Data",
+   "label": "Nationalite",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pays_de_residence",
+   "fieldtype": "Data",
+   "label": "Pays de Residence",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pays_de_destination",
+   "fieldtype": "Select",
+   "label": "Pays de Destination",
+   "options": "\nRoumanie\nChine\nCoree du Sud\nJapon\nMalaisie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_12",
+   "fieldtype": "Data"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-02 01:07:21.534515",
+ "modified": "2021-05-02 01:35:16.300139",
  "modified_by": "Administrator",
  "module": "Immigration 360",
  "name": "Dossier Immigration",
+ "name_case": "UPPER CASE",
  "owner": "Administrator",
  "permissions": [
   {
