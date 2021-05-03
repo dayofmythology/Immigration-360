@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "DI-{YYMM}-{####}",
+ "autoname": "format:DI-{YYMM}-{####}",
  "creation": "2021-05-02 01:07:21.534515",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -17,7 +17,7 @@
   "data_9",
   "pays_de_residence",
   "pays_de_destination",
-  "data_12"
+  "document"
  ],
  "fields": [
   {
@@ -44,7 +44,8 @@
    "fieldname": "consultant",
    "fieldtype": "Link",
    "label": "Consultant Assign\u00e9",
-   "options": "Employee"
+   "options": "Employee",
+   "reqd": 1
   },
   {
    "collapsible": 1,
@@ -53,6 +54,7 @@
    "label": "Informations sur le dossier"
   },
   {
+   "default": "Today",
    "fieldname": "date_de_creation",
    "fieldtype": "Data",
    "label": "Date de Creation"
@@ -87,13 +89,15 @@
    "reqd": 1
   },
   {
-   "fieldname": "data_12",
-   "fieldtype": "Data"
+   "fieldname": "document",
+   "fieldtype": "Link",
+   "label": "Documents",
+   "options": "Liste des Documents"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-02 01:35:16.300139",
+ "modified": "2021-05-02 23:08:02.032059",
  "modified_by": "Administrator",
  "module": "Immigration 360",
  "name": "Dossier Immigration",
