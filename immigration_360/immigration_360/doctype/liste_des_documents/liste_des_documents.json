@@ -11,17 +11,14 @@
  "fields": [
   {
    "fieldname": "document",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Document",
-   "options": "File",
-   "reqd": 1
+   "fieldtype": "Attach",
+   "label": "Document"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-05-02 01:38:02.932204",
+ "modified": "2021-05-02 16:19:11.907332",
  "modified_by": "Administrator",
  "module": "Immigration 360",
  "name": "Liste des Documents",
