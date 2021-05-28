@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:DI-{YYMM}-{####}",
+ "autoname": "format:DI-{####}",
  "creation": "2021-05-02 01:07:21.534515",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -17,7 +17,8 @@
   "data_9",
   "pays_de_residence",
   "pays_de_destination",
-  "document"
+  "informations_compl\u00e9mentaires_section",
+  "remarques"
  ],
  "fields": [
   {
@@ -61,8 +62,10 @@
   },
   {
    "fieldname": "etat",
-   "fieldtype": "Data",
-   "label": "Etat"
+   "fieldtype": "Select",
+   "label": "Etat",
+   "options": "Nouveau\nEn Cours\nEn Attente\nSuspendu\nR\u00e9ussi\nEchou\u00e9",
+   "reqd": 1
   },
   {
    "fieldname": "data_8",
@@ -89,15 +92,19 @@
    "reqd": 1
   },
   {
-   "fieldname": "document",
-   "fieldtype": "Link",
-   "label": "Documents",
-   "options": "Liste des Documents"
+   "fieldname": "informations_compl\u00e9mentaires_section",
+   "fieldtype": "Section Break",
+   "label": "Informations Compl\u00e9mentaires"
+  },
+  {
+   "fieldname": "remarques",
+   "fieldtype": "Data",
+   "label": "Remarques"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-02 23:08:02.032059",
+ "modified": "2021-05-27 23:19:30.487797",
  "modified_by": "Administrator",
  "module": "Immigration 360",
  "name": "Dossier Immigration",
